@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,4 +6,64 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Write CSS code below */
+.main-content {
+    min-height: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+    width: 90%;
+}
+
+.left-content {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: rgb(19, 19, 27);
+    color: #fff;
+    padding: 1rem;
+}
+
+.right-main-content {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: aqua;
+}
+
+/* image CSS */
+.profile-image {
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30px;
+    width: 60%;
+
+}
+
+/* h2 {
+    margin-top: 10px;
+    text-align: center;
+} */
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-indent: 0.02px;
+    padding: 0.8rem;
+
+}
+
+.designation {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5;
+}
+
+.description {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
