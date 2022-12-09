@@ -6,61 +6,67 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Write CSS code below */
+body {
+    background-color: white;
+}
+
 .main-content {
     min-height: 1000px;
+    width: 90%;
     margin: 20px auto;
     display: grid;
     grid-template-columns: 300px 700px;
-    width: 90%;
+}
+
+.left-section {
+    grid-column: span 1;
+    background-color: rgb(23, 36, 58);
+    margin-left: 5%;
 }
 
 .left-content {
-    border: 2px solid #ffa94d;
-    border-radius: 5px;
-    padding: 1em;
-    background-color: rgb(19, 19, 27);
-    color: #fff;
     padding: 1rem;
 }
 
-.right-main-content {
-    border-radius: 5px;
-    padding: 1em;
-}
-
-/* image CSS */
 .profile-image {
+    width: 60%;
+    height: 150px;
+    border-radius: 30%;
+    border: 5px solid white;
     display: block;
     margin: auto;
-    border: 5px solid white;
-    border-radius: 30px;
-    width: 60%;
+    align-items: center;
+}
 
+.profile-details {
+    text-align: center;
 }
 
 .name {
+    color: white;
     font-size: 1.2rem;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
-    text-indent: 0.02px;
+    text-align: center;
+    letter-spacing: 0.02px;
     padding: 0.8rem;
-
 }
 
 .designation {
     font-size: 1rem;
     text-align: center;
+    color: skyblue;
+    padding-bottom: 0.5rem;
     text-transform: uppercase;
-    padding-bottom: 0.5;
 }
 
 .description {
+    color: white;
     font-size: 0.75rem;
-    text-align: center;
     padding: 1rem;
+    text-align: center;
 }
-
 
 .contact-item {
     width: 100%;
@@ -69,8 +75,7 @@
 .social-media {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem;
+    justify-content: center;
 }
 
 .social-media .icon {
@@ -102,18 +107,19 @@ i {
     padding-bottom: 0.5rem;
 }
 
-.skill-title {
+.skills-title {
     font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
     color: white;
     padding-top: 1rem;
-
+    padding-bottom: 0.5rem;
 }
 
 .skills-content {
     flex-direction: row;
     padding: 1rem;
+
 }
 
 .skill-item {
@@ -140,8 +146,9 @@ i {
     border-radius: 10px;
 }
 
+
 .right-section {
-    grid-column: span 1/span 2;
+    grid-column: span 1/ span 2;
     background-color: white;
 }
 
@@ -186,10 +193,6 @@ i {
 
 .experience-content>* {
     margin-top: 5px;
-}
-
-p {
-    text-align: justify;
 }
 
 @media screen and (max-width: 673px) {
